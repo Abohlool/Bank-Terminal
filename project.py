@@ -1,4 +1,4 @@
-from bank import *
+from Bank import *
 from pyfiglet import Figlet
 import re
 import exceptions as e
@@ -170,7 +170,7 @@ def print_accounts() -> str:
 def print_info():
     print("==================================================================================================================")
     acc = Bank.current_account
-    return f"Name: {names[acc]}         Birthday: {bdays[acc]}\nAccount Number: {nums[acc]}\nAccount Type: {acc_types[acc]}         Ballance: ${balances[acc]}"
+    return f"Name: {names[acc]}         Birthday: {bdays[acc]}\nAccount Number: {nums[acc]}\nAccount Type: {acc_types[acc]}         Balance: ${balances[acc]}"
 
 
 def testing():

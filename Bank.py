@@ -163,7 +163,7 @@ class Bank:
 
     def deposit(amount: int | str = None) -> str:
         """
-        deposits ${amount} to the account ballence witch the function was called with
+        deposits ${amount} to the account balance witch the function was called with
         """
         if not amount:
             amount = int(get_amount("deposit"))
@@ -176,14 +176,14 @@ class Bank:
                 return None
 
             balances[Bank.current_account] += amount
-            return f"Ballance: ${balances[Bank.current_account]}"
+            return f"Balance: ${balances[Bank.current_account]}"
 
         except e.InputError:
             Bank.deposit()
 
     def withdraw(amount: int | str = None) -> str:
         """
-        withdraws ${amount} from the account ballence witch the function was called with
+        withdraws ${amount} from the account balance witch the function was called with
         """
         if not amount:
             amount = get_amount("withdraw")
@@ -196,7 +196,7 @@ class Bank:
                 raise e.Back
 
             balances[Bank.current_account] -= amount
-            return f"Ballance: ${balances[Bank.current_account]}"
+            return f"Balance: ${balances[Bank.current_account]}"
 
         except e.InputError:
             Bank.withdraw()
@@ -220,7 +220,7 @@ class Bank:
 
         balances[Bank.current_account] -= amount
         balances[nums.index(acc_num)] += amount
-        return f"Ballance: ${balances[Bank.current_account]}"
+        return f"Balance: ${balances[Bank.current_account]}"
 
 
 # =======================================================================================================================
@@ -228,14 +228,14 @@ def get_amount(transaction: str) -> int:
     amount = input(f"Enter the amount you want to {transaction}: ")
     if amount.isnumeric():
         if transaction in ["withdraw", "transfer"]:
-            check_ballance(amount)
+            check_balance(amount)
         return int(amount)
 
     else:
         raise e.Back
 
 
-def check_ballance(amount: int):
+def check_balance(amount: int):
     if int(amount) > balances[Bank.current_account]:
         raise e.TransactionError("Insufficient Funds")
 
