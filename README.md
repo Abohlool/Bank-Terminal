@@ -1,6 +1,6 @@
 # Bank Terminal
-## Video Demo:  <(https://youtu.be/jKbuuhkceSk)>
-## Description: This project is a bank terminal which allows the user to make accounts, deposit, withdraw, transfer, and edit their accounts
+## Video Demo:  <https://youtu.be/jKbuuhkceSk>
+## Description: This project is a bank terminal (similar to an ATM) which allows the user to make accounts, deposit, withdraw, transfer, and edit their accounts
 ### Instructions: Once you run the program you will need to select weather you want to sign in or sign up. Choose sign up when running the program.
 ### Signup: In this stage you'll need to input a name (which needs to be at least two words), a birthday (MM/DD/YYYY), an account type and a PIN number (4 to 8 digits) (you'll need to confirm your PIN number)
 ### Signin: after signing in at least once you can use input "signin" or "sign in" to sign in. Then you'll need to input the name you signed up with and The PIN number you gave.
